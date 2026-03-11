@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegacyLauncher</title>
+    <link rel="icon" type="image/png" href="256x256.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./window/window.css">
+    <script type="module" src="./window/window.js"></script>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="window-background" class="fade animated"><div></div></div>
+
+        <header id="titlebar">
+            <div id="drag-region">
+
+                <div id="window-title">
+                    <!--<span>Legacy Community Launcher</span>-->
+                </div>
+
+                <div id="window-controls">
+
+                    <div class="button" id="min-button">
+                        <img class="icon" src="./window/titlebar/min.png" draggable="false" />
+                    </div>
+                    <div class="button" id="max-button">
+                        <img class="icon" src="./window/titlebar/max.png" draggable="false" />
+                    </div>
+                    <div class="button" id="restore-button">
+                        <img class="icon" src="./window/titlebar/restore.png" draggable="false" />
+                    </div>
+                    <div class="button" id="close-button">
+                        <img class="icon" src="./window/titlebar/close.png" draggable="false" />
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <div id="main">
+            <div id="launch-bar">
+                <img id="play-logo" src="./assets/minecraftlogo.png">
+                <div id="launch-actions">
+                    <div id="discover-button" class="mc-button">
+                        <div class="title"><img id="discover-icon" src="./assets/buttons/discover.svg"></div>
+                    </div>
+                    <div id="play-button" class="mc-button">
+                        <div class="title">Play</div>
+                    </div>
+                    <div id="servers-button" class="mc-button">
+                        <div class="title"><img id="servers-icon" src="./assets/buttons/servers.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

@@ -27,7 +27,7 @@
 
 <h2>What is LC Launcher?</h2>
 <p>
-LC Launcher is a multi-platform launcher for Minecraft Legacy Console Edition forks.
+Legacy Community Launcher is a multi-platform launcher for Minecraft Legacy Console Edition forks.
 </p>
 
 <h2>Planned Features</h2>
@@ -43,6 +43,9 @@ LC Launcher is a multi-platform launcher for Minecraft Legacy Console Edition fo
 - [ ] Discord RPC Presence
 - [ ] Use wine to run apps on linux and macos
 - [ ] Add friends in the launcher which you can launch into their server. (uses discord rpc)
+- [ ] Sandbox Game / Server
+- [ ] Skin Editor / Change Skins
+- [ ] Patch updates from Git repo
 
 <h2>Installation</h2>
 
