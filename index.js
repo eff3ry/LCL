@@ -25,7 +25,7 @@ function createWindow() {
     });
 
     if (!app.isPackaged) {
-        //mainWindow.webContents.openDevTools();
+        mainWindow.webContents.openDevTools();
     };
 
     remoteMain.enable(mainWindow.webContents);
