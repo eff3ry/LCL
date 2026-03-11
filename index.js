@@ -17,6 +17,7 @@ function createWindow() {
         roundedCorners: false,
         titleBarOverlay: false,
         transparent: true,
+        show: false,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -33,6 +34,10 @@ function createWindow() {
 
     mainWindow.on('closed', () => {
         mainWindow = null;
+    });
+
+    mainWindow.on('ready-to-show', () => {
+        mainWindow.show();
     });
 };
 
