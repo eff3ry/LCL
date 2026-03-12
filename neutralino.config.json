@@ -45,7 +45,7 @@
             "transparent": true,
             "borderless": true,
             "maximize": false,
-            "hidden": true,
+            "hidden": false,
             "resizable": false,
             "exitProcessOnClose": true,
             "injectGlobals": true
