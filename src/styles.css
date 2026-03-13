@@ -216,6 +216,16 @@
 	color: #e3e3e3;
 }
 
+#toast {
+	position: fixed;
+	top: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	font: 12px 'Minecraftia', sans-serif;
+	text-shadow: 2px 2px #000A;
+}
+
 #top-bar > #main-actions {
 	justify-content: flex-end;
 }
