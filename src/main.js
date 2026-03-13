@@ -10,4 +10,4 @@ setupWindow();
 setTimeout(() => { // once anim done
     document.querySelector("#main").classList.remove("open-anim");
     startMusic();
-}, 2000);
+}, 1600);

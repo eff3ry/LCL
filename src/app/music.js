@@ -1,3 +1,5 @@
+import { showToast } from "../window/toast.js";
+
 const audioCtx = new AudioContext();
 const audioFiles = [
     'Snapdragon_-_Therm.mp3',
@@ -6,10 +8,9 @@ const audioFiles = [
     'Kyoto_-_C418.mp3',
     'Mutation_-_C418.mp3'
 ]; 
-const audioPath = audioFiles[(Math.random()*audioFiles.length)|0];
-const audioElement = new Audio(`./assets/music/${audioPath}`); 
+
+const audioElement = new Audio(); 
 audioElement.volume = 1;
-audioElement.loop = true;
 
 async function setupSurround() {
     if (audioCtx.state === 'suspended') {
@@ -57,7 +58,26 @@ async function setupSurround() {
     moveSound();
 };
 
+let lastIndex = -1;
+function playSong() {
+    let index;
+    do {
+        index = (Math.random() * audioFiles.length) | 0;
+    } while (index === lastIndex);
+    lastIndex = index;
+
+    const audioPath = audioFiles[index];
+    audioElement.src = `./assets/music/${audioPath}`;
+    audioElement.play();
+
+    showToast(`Now playing: ${audioPath.replace(".mp3", "").replaceAll("_", " ")}`);
+};
+
 export async function startMusic() {
     await setupSurround();
-    audioElement.play();
+    playSong();
+
+    audioElement.addEventListener("ended", () => {
+        playSong();
+    });
 };
