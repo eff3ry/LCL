@@ -21,6 +21,18 @@ echo -e "\033[1mNeutralino BuildScript for macOS platform, version ${VERSION}\03
 
 CONF=./neutralino.config.json
 
+if [ ! -d "./node_modules/@neutralinojs/neu" ]; then
+    echo
+    echo Installing Node Modules...
+    npm i
+fi
+
+if [ ! -e "./bin/neutralino-win_x64.exe" ]; then
+    echo
+    echo Downloading Neutralino Binaries
+    npx neu update
+fi
+
 if ! command -v jq >/dev/null 2>&1
 then
     echo -e "\033[31m\033[1mWARNING: JQ not found. Installing..\033[0m"

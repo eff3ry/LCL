@@ -27,12 +27,11 @@
     ],
     "private": true,
     "scripts": {
-        "dev": "WEBKIT_DISABLE_COMPOSITING_MODE=1 neu run",
+        "dev": "sh ./build-scripts/dev.sh",
         "build-mac": "sh ./build-scripts/build-mac.sh",
         "build-linux": "sh ./build-scripts/build-linux.sh",
         "build-win": "sh ./build-scripts/build-win.sh",
-        "build": "sh ./build-scripts/build-all.sh",
-        "setup": "npm i && neu update"
+        "build": "sh ./build-scripts/build-all.sh"
     },
     "build": {
         "appId": "dev.huckle.legacycommunitylauncher",
