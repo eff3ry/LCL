@@ -33,39 +33,6 @@
         "build-win": "sh ./build-scripts/build-win.sh",
         "build": "sh ./build-scripts/build-all.sh"
     },
-    "build": {
-        "appId": "dev.huckle.legacycommunitylauncher",
-        "productName": "LC Launcher",
-        "files": [
-            "src/**/*",
-            "index.js",
-            "package.json"
-        ],
-        "mac": {
-            "target": [
-                "dmg"
-            ],
-            "icon": "assets/icon.icns",
-            "minimumSystemVersion": "10.13.0"
-        },
-        "win": {
-            "target": [
-                {
-                    "target": "portable",
-                    "arch": [
-                        "x64"
-                    ]
-                }
-            ],
-            "icon": "assets/icon.png"
-        },
-        "linux": {
-            "target": [
-                "AppImage"
-            ],
-            "icon": "assets/icon.png"
-        }
-    },
     "dependencies": {
         "@neutralinojs/neu": "^11.6.0"
     }
