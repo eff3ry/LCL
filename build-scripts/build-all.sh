@@ -9,3 +9,5 @@ chmod +x ./build-scripts/build-linux.sh ./build-scripts/build-mac.sh ./build-scr
 
 echo 
 echo -e "\033[1mAll platforms built.\033[0m"
+
+echo -e "\033[1mMAKE SURE THAT tokenSecurity was set to one-time in neutralino CONFIG!\033[0m"

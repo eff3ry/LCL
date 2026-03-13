@@ -1,5 +1,3 @@
-import "./menus/main.js";
-
 import Neutralino from "@neutralinojs/lib";
 
 import { setupWindow } from "./window/window.js";
@@ -9,7 +7,8 @@ Neutralino.init();
 
 setupWindow();
 
+setTimeout(() => document.querySelector("#main").classList.remove("open-anim"), 2000);
+
 setTimeout(() => { // once anim done
-    document.querySelector("#main").classList.remove("open-anim");
     startMusic();
 }, 1600);

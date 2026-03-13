@@ -1,5 +1,11 @@
 import { showToast } from "../window/toast.js";
 
+import "../assets/music/Aria_Math_-_C418.mp3";
+import "../assets/music/Far_-_C418.mp3";
+import "../assets/music/Kyoto_-_C418.mp3";
+import "../assets/music/Mutation_-_C418.mp3";
+import "../assets/music/Snapdragon_-_Therm.mp3";
+
 const audioCtx = new AudioContext();
 const audioFiles = [
     'Snapdragon_-_Therm.mp3',
