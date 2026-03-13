@@ -1,3 +1,5 @@
+import "./menus/main.js";
+
 import * as Neutralino from "./vendor/neutralino/neutralino.mjs";
 
 import { setupWindow } from "./window/window.js";

@@ -34,6 +34,11 @@
         "build": "sh ./build-scripts/build-all.sh"
     },
     "dependencies": {
-        "@neutralinojs/neu": "^11.6.0"
+        "lit": "^3.3.2"
+    },
+    "devDependencies": {
+        "@neutralinojs/neu": "^11.6.0",
+        "vite": "^8.0.0",
+        "vite-plugin-static-copy": "^3.3.0"
     }
 }
