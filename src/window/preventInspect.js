@@ -1,4 +1,4 @@
-import * as Neutralino from "../vendor/neutralino/neutralino.mjs";
+import Neutralino from "@neutralinojs/lib";
 
 export async function preventInspect() {
     // Debug Mode right click for inspect element

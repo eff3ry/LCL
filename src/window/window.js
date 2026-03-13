@@ -1,5 +1,5 @@
 // code modified from https://github.com/binaryfunt/electron-seamless-titlebar-tutorial. all credit given
-import * as Neutralino from "../vendor/neutralino/neutralino.mjs";
+import Neutralino from "@neutralinojs/lib";
 
 import { createMenuBar } from "./menubar.js";
 import { preventInspect } from "./preventInspect.js";

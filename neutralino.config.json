@@ -31,7 +31,7 @@
     "modes": {
         "window": {
             "title": "LC Launcher",
-            "icon": "/public/assets/icon.png",
+            "icon": "/assets/icon.png",
             "width": 1000,
             "height": 600,
             "minWidth": 800,
@@ -56,7 +56,15 @@
         "binaryName": "LC_Launcher",
         "binaryVersion": "6.4.0",
         "resourcesPath": "/public/",
-        "clientLibrary": "/public/vendor/neutralino/neutralino.mjs",
+        "frontendLibrary": {
+            "patchFile": "/src/index.html",
+            "devUrl": "http://localhost:3000",
+            "projectPath": "/",
+            "initCommand": "npm i",
+            "devCommand": "BROWSER=none npx vite",
+            "buildCommand": "npx vite build",
+            "waitTimeout": 20000
+        },
         "clientVersion": "6.4.0"
     },
     "buildScript": {

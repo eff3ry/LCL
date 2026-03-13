@@ -1,5 +1,3 @@
-import * as Neutralino from "../vendor/neutralino/neutralino.mjs";
-
 export async function preventScrollBounce() {
     // stop annoying scroll bounce
     function hasScrollableParent(e) {

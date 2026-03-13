@@ -3,19 +3,19 @@ import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig({
     root: 'src',
+    server: {
+        port: 3000,
+        strictPort: true,
+        fs: {
+            strict: false
+        }
+    },
     build: {
         emptyOutDir: true,
-        outDir: '../renderer',
+        outDir: '../public',
         target: 'safari15',
         minify: 'esbuild',
         sourcemap: false,
-        rollupOptions: {
-            external: [
-                './vendor/neutralino/neutralino.mjs',
-                '../vendor/neutralino/neutralino.mjs',
-                '../../vendor/neutralino/neutralino.mjs'
-            ],
-        },
     },
     plugins: [
         viteStaticCopy({
@@ -23,10 +23,6 @@ export default defineConfig({
                 {
                     src: 'assets/icon.png',
                     dest: 'assets'
-                },
-                {
-                    src: 'vendor/neutralino/neutralino.mjs',
-                    dest: 'vendor/neutralino/'
                 }
             ]
         })

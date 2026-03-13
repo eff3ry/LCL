@@ -1,6 +1,6 @@
 import "./menus/main.js";
 
-import * as Neutralino from "./vendor/neutralino/neutralino.mjs";
+import Neutralino from "@neutralinojs/lib";
 
 import { setupWindow } from "./window/window.js";
 import { startMusic } from "./app/music.js";

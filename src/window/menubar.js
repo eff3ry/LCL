@@ -1,4 +1,4 @@
-import * as Neutralino from "../vendor/neutralino/neutralino.mjs";
+import Neutralino from "@neutralinojs/lib";
 
 export async function createMenuBar() {
     if (NL_OS !== 'Darwin') return;

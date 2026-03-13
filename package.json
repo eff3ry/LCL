@@ -34,10 +34,12 @@
         "build": "sh ./build-scripts/build-all.sh"
     },
     "dependencies": {
+        "@neutralinojs/lib": "^6.5.0",
         "lit": "^3.3.2"
     },
     "devDependencies": {
         "@neutralinojs/neu": "^11.6.0",
+        "esbuild": "^0.27.4",
         "vite": "^8.0.0",
         "vite-plugin-static-copy": "^3.3.0"
     }
