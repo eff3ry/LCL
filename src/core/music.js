@@ -1,4 +1,4 @@
-import { showToast } from "../window/toast.js";
+import { showToast } from "../components/Toast.jsx";
 
 import "../assets/music/Aria_Math_-_C418.mp3";
 import "../assets/music/Far_-_C418.mp3";

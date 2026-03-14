@@ -1,0 +1,98 @@
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: 10px 'Minecraftia', sans-serif;
+}
+
+#logo {
+    width: 300px;
+}
+
+#infobar {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#infobar .link, #creators a {
+    color: #66becb;
+}
+
+#infobar .link:hover, #creators a:hover {
+    text-decoration: underline;
+}
+
+#infobar .link:active, #creators a:active {
+    color: #4a8892;
+}
+
+#infobar > * {
+    border-left: 1px solid rgba(255, 255, 255, 0.383);
+    padding-left: 15px;
+}
+
+#infobar > *:last-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.383);
+    padding-right: 15px;
+}
+
+#version {
+    font-size: 10px;
+    cursor: default;
+    color: #cbcbcb;
+}
+
+#description {
+    font-size: 12px;
+    color: #dbdbdb;
+    cursor: default;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#creators {
+    margin-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.383);
+    padding-top: 10px;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 300;
+    color: #ffffffad;
+    text-align: center;
+    cursor: default;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+#meta {
+    margin-top: auto;
+    font: 8px 'Minecraftia', sans-serif;
+    width: -webkit-fill-available;
+    max-width: 500px;
+}
+
+.meta-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    color: #aaa;
+    gap: 20px;
+}
+
+.meta-row > span:last-child {
+    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+    margin-bottom: 0px;
+}
+
+.label {
+    opacity: 0.7;
+    text-wrap: nowrap;
+}

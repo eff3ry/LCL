@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
-import { viteStaticCopy } from 'vite-plugin-static-copy'
+import { viteStaticCopy } from 'vite-plugin-static-copy';
+import preact from '@preact/preset-vite';
 
 export default defineConfig({
     root: 'src',
@@ -18,6 +19,7 @@ export default defineConfig({
         sourcemap: false,
     },
     plugins: [
+        preact(),
         viteStaticCopy({
             targets: [
                 {
