@@ -1,5 +1,5 @@
 > **NOTE** <br>
-> Legacy Community Launcher does not contain any code from Minecraft Legacy Console Edition. Therefore, please don't DMCA this project. 
+> Legacy Community Launcher does not contain any code from Microsoft/4JStudios. Therefore, please don't DMCA this project. 
 
 <a name="readme-top"></a>
 
